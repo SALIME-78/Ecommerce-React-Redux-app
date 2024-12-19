@@ -4,7 +4,7 @@ import { LogIn, UserPlus, ShoppingCart } from 'lucide-react'
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <nav className="flex items-center justify-between sm:px-8 lg:px-20 py-4 bg-white shadow-md">
+    <nav className="flex items-center justify-between px-8 lg:px-20 py-4 bg-white shadow-md">
     {/* Logo */}
     <div className="lg:text-xl font-semibold">
       E-commerce
@@ -33,7 +33,7 @@ function Navbar() {
     {/* Navigation Links */}
     <div
       className={`${
-        isMenuOpen ? 'block' : 'hidden'
+        isMenuOpen ? 'block ps-8' : 'hidden'
       } md:flex md:space-x-6 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none`}
     >
       <a href="/" className="block md:ps-2 lg:px-6 py-2 text-black md:inline-block">
